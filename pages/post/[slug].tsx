@@ -72,6 +72,7 @@ const Post = ({ posts }: Props) => {
         <div>
           <PortableText
             className="mt-10"
+            // @ts-ignore
             content={posts.body}
             projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!}
             dataset={process.env.NEXT_PUBLIC_SANITY_DATASET!}
